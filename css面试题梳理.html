@@ -1,0 +1,733 @@
+<!DOCTYPE html><html><head><title>css面试题梳理</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><ul>
+<li><a href="#css面试题梳理">css面试题梳理</a><ul>
+<li><a href="#1请列出你所知道的使用css让元素上下居中方案最好包含flex的方法">1.请列出你所知道的使用css让元素上下居中方案(最好包含flex的方法)；</a></li>
+<li><a href="#2css中box-sizing的作用-css有哪些盒子模型它们对应的样式是什么">2.css中box-sizing的作用  / css有哪些盒子模型？它们对应的样式是什么？</a></li>
+<li><a href="#3如让适配不同大小的手机屏幕">3.如让适配不同大小的手机屏幕；</a></li>
+<li><a href="#4请罗列常见的清除浮动方案-css清除浮动的方法至少两种-html中浮动塌陷问题如何解决">4.请罗列常见的清除浮动方案 / CSS清除浮动的方法（至少两种） / HTML中浮动塌陷问题如何解决</a></li>
+<li><a href="#5css中表示长度的单位有哪些">5.CSS中表示长度的单位有哪些；</a></li>
+<li><a href="#6css中那个属性用来定位元素">6.CSS中那个属性用来定位元素；</a></li>
+<li><a href="#7html5中新增的属性有哪些-html5-你用过哪些">7.HTML5中新增的属性有哪些 / html5 你用过哪些？</a></li>
+<li><a href="#8举例并简述块级元素与行内元素的区别-块级和行内元素有哪些他们有什么区别">8.举例并简述块级元素与行内元素的区别 / 块级和行内元素有哪些，他们有什么区别；</a></li>
+<li><a href="#9html中的doctype的作用是什么-你知道多少种文档类型">9.html中的doctype的作用是什么？ 你知道多少种文档类型</a></li>
+<li><a href="#10请解释一下什么是语义化的html-简述什么叫做标签语义化日常工作中怎样遵循标签语义化">10.请解释一下什么是语义化的html / 简述什么叫做标签语义化；日常工作中怎样遵循标签语义化:</a></li>
+<li><a href="#11实现页面的三栏布局左右均为定宽高度可以自适应双飞翼布局-圣杯布局">11.实现页面的三栏布局，左右均为定宽，高度可以自适应；（双飞翼布局 、圣杯布局）</a></li>
+<li><a href="#12请描述css选择器的优先级原则">12.请描述css选择器的优先级原则?</a></li>
+<li><a href="#13解释css-sprites雪碧图如何使用">13.解释CSS sprites(雪碧图)如何使用？</a></li>
+<li><a href="#14css中的animation动画如何使用-transition-animation-什么区别">14.CSS中的animation动画如何使用 / transition animation 什么区别？</a></li>
+<li><a href="#15使用css让一个div消失在视野中发挥想象力">15..使用css,让一个div消失在视野中；发挥想象力?</a></li>
+<li><a href="#16至少写出3种css3新增的属性">16.至少写出3种css3新增的属性?</a></li>
+<li><a href="#17如何用css绘制一个三角不允许使用图片">17.如何用css绘制一个三角(不允许使用图片)？</a></li>
+<li><a href="#18你做的页面在哪些流览器测试过这些浏览器的内核分别是什么">18.你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?</a></li>
+<li><a href="#19divcss的布局较table布局有什么优点">19.div+css的布局较table布局有什么优点？</a></li>
+<li><a href="#20img的alt与title有何异同-strong与em的异同">20.img的alt与title有何异同？ strong与em的异同？</a></li>
+<li><a href="#21对bfc规范的理解">21..对BFC规范的理解?</a></li>
+<li><a href="#22你能描述一下渐进增强和优雅降级之间的不同吗">22.你能描述一下渐进增强和优雅降级之间的不同吗?</a></li>
+<li><a href="#23为什么利用多个域名来存储网站资源会更有效">23.为什么利用多个域名来存储网站资源会更有效？</a></li>
+<li><a href="#24csshack问题我就不总结了给你们个张鑫旭总结的网址看看">24.csshack问题我就不总结了给你们个张鑫旭总结的网址看看：</a></li>
+<li><a href="#25前端页面有哪三层构成分别是什么作用是什么">25.前端页面有哪三层构成，分别是什么?作用是什么?</a></li>
+<li><a href="#26position跟displaymargin-collapseoverflowfloat这些特性相互叠加后会怎么样">26.、position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</a></li>
+<li><a href="#27px和em的区别">27.px和em的区别？</a></li>
+<li><a href="#28css中link和import的区别是">28.CSS中link和@import的区别是？</a></li>
+<li><a href="#29为什么要初始化样式">29.为什么要初始化样式？</a></li>
+<li><a href="#30sassless是什么大家为什么要使用他们">30.Sass、LESS是什么？大家为什么要使用他们？</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<h2 id="css面试题梳理">css面试题梳理</h2>
+
+<h3 id="1请列出你所知道的使用css让元素上下居中方案最好包含flex的方法">1.请列出你所知道的使用css让元素上下居中方案(最好包含flex的方法)；</h3>
+
+<blockquote>
+  <p>1）利用定位</p>
+  
+  <blockquote>
+    <p>先给父元素加一个定位属性，然后给子元素一个绝对定位，四个方向设置0，然后用margin居中</p>
+  </blockquote>
+</blockquote>
+
+<pre class="prettyprint hljs-dark"><code class="hljs scss"><div class="hljs-line">pisition:absollute;
+</div><div class="hljs-line"><span class="hljs-attribute">top</span>:<span class="hljs-number">0</span>;<span class="hljs-attribute">bottom</span>:<span class="hljs-number">0</span>;<span class="hljs-attribute">left</span>:<span class="hljs-number">0</span>;<span class="hljs-attribute">right</span>:<span class="hljs-number">0</span>;
+</div><div class="hljs-line"><span class="hljs-attribute">margin</span>:auto;
+</div></code></pre>
+
+<blockquote>
+  <blockquote>
+    <p>这个是水平垂直居中，同理水平和垂直只需要设置对应方向为0 就可以</p>
+  </blockquote>
+  
+  <p>2）通过line-height实现垂直居中</p>
+  
+  <blockquote>
+    <p>大概就是<code>line-height=height</code>的值</p>
+  </blockquote>
+  
+  <p>3)通过transform,让元素居中</p>
+  
+  <blockquote>
+    <p>给该元素设置相对定位</p>
+    
+    <pre class="prettyprint hljs-dark"><code class="hljs scss"><div class="hljs-line"><span class="hljs-attribute">position</span>:relative;
+</div><div class="hljs-line"><span class="hljs-attribute">top</span>:<span class="hljs-number">50%</span>;
+</div><div class="hljs-line"><span class="hljs-attribute">transform</span>:transtlateY(-<span class="hljs-number">50%</span>);
+</div></code></pre>
+  </blockquote>
+  
+  <p>4)使用padding值之类的属性使得元素居中 <br>
+  5)使用css3样式属性display:flex设定水平垂直居中，父元素样式属性display:flex;子元素使用 <br>
+  margin:auto;未知子元素高度的时候依然可以使用。 <br>
+  一般chrome和火狐都能很好地支持。ie不支持 <br>
+  Flex是Flexible Box的缩写，意为”弹性布局”，用来为盒状模</p>
+</blockquote>
+
+
+
+<h3 id="2css中box-sizing的作用-css有哪些盒子模型它们对应的样式是什么">2.css中box-sizing的作用  / css有哪些盒子模型？它们对应的样式是什么？</h3>
+
+<blockquote>
+  <p>1)box-sizing的属性为三个值之一</p>
+</blockquote>
+
+<table><tbody><tr style="font-weight:bold">  <td>值</td>  <td>描述</td></tr><tr>  <td>context-box</td>  <td>宽高分别应用到内容框，宽高之外绘制元素的边距和边框</td></tr><tr>  <td>border-box</td>  <td>简单来说就是盒子宽高不变，内容被压缩</td></tr><tr>  <td>inherit</td>  <td>规定父元素继承box-sizing属性的值</td></tr></tbody></table>
+
+<blockquote>
+  <p>2)标准盒模型+IE盒模型</p>
+  
+  <blockquote>
+    <p>具体理解就是 <br>
+    标准盒子模型：width/height=实际宽高 <br>
+    IE盒模型：width/height=实际宽高+padding+border</p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="3如让适配不同大小的手机屏幕">3.如让适配不同大小的手机屏幕；</h3>
+
+<blockquote>
+  <p>1)使用meta标签中的<code>viewport：</code>视口,快捷键<code>meta:vp+tab键</code> <br>
+  2）使用媒体查询</p>
+  
+  <blockquote>
+    <p>media screen and (最大宽度){变化的内容}</p>
+  </blockquote>
+  
+  <p>3）使用移动端开发单位rem</p>
+</blockquote>
+
+
+
+<h3 id="4请罗列常见的清除浮动方案-css清除浮动的方法至少两种-html中浮动塌陷问题如何解决">4.请罗列常见的清除浮动方案 / CSS清除浮动的方法（至少两种） / HTML中浮动塌陷问题如何解决</h3>
+
+<blockquote>
+  <p>1)给父元素设置固定高度 <br>
+  2）给父级加上<code>overflow:hidden</code> <br>
+  3)利用伪元素after，来使用clearfix.(前三个比较重要，后边可加可不加)</p>
+  
+  <pre class="prettyprint hljs-dark"><code class="hljs scss"><div class="hljs-line">{<span class="hljs-attribute">display</span>:block;
+</div><div class="hljs-line"><span class="hljs-attribute">content</span>:<span class="hljs-string">""</span>;
+</div><div class="hljs-line"><span class="hljs-attribute">clear</span>:both;
+</div><div class="hljs-line"><span class="hljs-attribute">overflow</span>:hidden
+</div><div class="hljs-line">font-size:<span class="hljs-number">0</span>;
+</div><div class="hljs-line"><span class="hljs-attribute">height</span>:<span class="hljs-number">0</span>;
+</div><div class="hljs-line"><span class="hljs-attribute">visibility</span>:hidden
+</div><div class="hljs-line">}
+</div><div class="hljs-line">.clearfix{
+</div><div class="hljs-line">*zoom=<span class="hljs-number">1</span>
+</div><div class="hljs-line">}
+</div></code></pre>
+</blockquote>
+
+<h3 id="5css中表示长度的单位有哪些">5.CSS中表示长度的单位有哪些；</h3>
+
+<p><code>我只列出常用的</code></p>
+
+<blockquote>
+  <p>1）绝对单位</p>
+  
+  <blockquote>
+    <p>cm厘米,mm毫米,px像素 <br>
+    2.54cm=25.4mm=96px</p>
+  </blockquote>
+  
+  <p>2)相对单位长度</p>
+  
+  <blockquote>
+    <p>emx相对文本尺寸，ex字体高度的一半，rem相对根元素<code>html</code>来计算，一般给根元素</p>
+  </blockquote>
+  
+  <p>视口单位长度（作为了解）</p>
+  
+  <blockquote>
+    <p>vw/vh[相对视口宽高，1vw/vh相当于视口宽高的1%] <br>
+    vmax/vmin[相对于漱口宽高但是被均分成100个 单位]</p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="6css中那个属性用来定位元素">6.CSS中那个属性用来定位元素；</h3>
+
+<blockquote>
+  <p>position</p>
+  
+  <ul><li><p>static:默认值不脱离文档流</p></li>
+  <li><p>relative：相对定位，不脱离文档流，结合四个方位相对于自己的左上角进行定位</p></li>
+  <li><p>absolute：绝对定位，脱离文档流，结合四个值相对于离他最近的元素进行定位，<code>注意：脱离文档流</code></p></li>
+  <li><p>fixed：固定定位，脱离文档流，相对于可视窗口进行定位，出现滚动条也不会随之滚动</p></li>
+  <li><p>z-index：提高层级（这个不是定位的属性）</p></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="7html5中新增的属性有哪些-html5-你用过哪些">7.HTML5中新增的属性有哪些 / html5 你用过哪些？</h3>
+
+<p><code>在此总结常用的</code></p>
+
+<blockquote>
+  <p>h5中</p>
+  
+  <blockquote>
+    <p>header头部，nav导航，canvas定义图片，audio音频，video视频，footer页尾，section相当于div，dialog定义对话，time时间，figure图片/figcaption图片文字。</p>
+  </blockquote>
+  
+  <p>input中</p>
+  
+  <blockquote>
+    <p>tel电话，emali邮件，number数字，color颜色，file文件选择框，search搜索框</p>
+  </blockquote>
+  
+  <p>form中</p>
+  
+  <blockquote>
+    <p>placeholder框里不输入东西会弹出提示 <br>
+    autofoucs自动获取焦点</p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="8举例并简述块级元素与行内元素的区别-块级和行内元素有哪些他们有什么区别">8.举例并简述块级元素与行内元素的区别 / 块级和行内元素有哪些，他们有什么区别；</h3>
+
+<blockquote>
+  <p>行内元素</p>
+  
+  <ul><li><p>span</p></li>
+  <li><p>a</p></li>
+  <li><p>em/i</p></li>
+  <li><p>strong/b</p></li>
+  <li><p>sub/sup</p></li>
+  </ul>
+  
+  <p>块元素</p>
+  
+  <ul><li><p>div</p></li>
+  <li><p>dl/dd/dt</p></li>
+  <li><p>p</p></li>
+  <li><p>ul/ol/li</p></li>
+  <li><p>table</p></li>
+  <li><p>h1-h6</p></li>
+  </ul>
+  
+  <p>行内块元素</p>
+  
+  <ul><li><p>img</p></li>
+  <li><p>textarea</p></li>
+  <li><p>input</p></li>
+  </ul>
+</blockquote>
+
+<p><code>区别</code></p>
+
+<blockquote>
+  <p>行内</p>
+  
+  <blockquote>
+    <p>(1)设置宽高无效  <br>
+    (2)对margin仅设置左右方向有效，上下无效；padding设置上下左右都有效，即会撑大空间,行内元素尺寸由内含的内容决定，盒模型中 padding, border 与块级元素并无差异，都是标准的盒模型，但是 margin却只有水平方向的值，垂直方向并没有起作用。  <br>
+    (3)不会自动进行换行 </p>
+  </blockquote>
+  
+  <p>块级</p>
+  
+  <blockquote>
+    <p>(1)能够识别宽高  <br>
+    (2)margin和padding的上下左右均对其有效  <br>
+    (3)可以自动换行  <br>
+    (4)多个块状元素标签写在一起，默认排列方式为从上至下 </p>
+  </blockquote>
+  
+  <p>行内块</p>
+  
+  <blockquote>
+    <p>(1)不自动换行  <br>
+    (2)能够识别宽高  <br>
+    (3)默认排列方式为从左到右  <br>
+    在HTML5中，程序员可以自定义标签，在任意定义标签中，加入display:block;即可，当然也可以是行内或行内块状。 </p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="9html中的doctype的作用是什么-你知道多少种文档类型">9.html中的doctype的作用是什么？ 你知道多少种文档类型</h3>
+
+<ul><li><p>作用</p>
+
+<ul>
+<li><p>1.doctype的作用是文档声明</p></li></ul></li>
+<li><p>类型</p>
+
+<ul>
+<li><p>2.html5 html4 xhtml</p></li></ul></li>
+</ul>
+
+
+
+<h3 id="10请解释一下什么是语义化的html-简述什么叫做标签语义化日常工作中怎样遵循标签语义化">10.请解释一下什么是语义化的html / 简述什么叫做标签语义化；日常工作中怎样遵循标签语义化:</h3>
+
+<blockquote>
+  <p>语义化html</p>
+  
+  <blockquote>
+    <p>语义化的HTML就是写出的HTML代码，符合内容的结构化（内容语义化），选择合适的标签（代 <br>
+    码语义化），能够便于开发者阅读和写出更优雅的代码的同时让浏览器的爬虫和机器很好地解析.</p>
+  </blockquote>
+  
+  <p>标签语义化</p>
+  
+  <blockquote>
+    <p>1.有利于SEO，有利于搜索引擎爬虫更好的理解我们的网页，从而获取更多的有效信息，提升网页 <br>
+    的权重。 <br>
+    2.在没有CSS的时候能够清晰的看出网页的结构，增强可读性。 <br>
+    3.便于团队开发和维护，语义化的HTML可以让开发者更容易的看明白，从而提高团队的效率和协 <br>
+    调能力。 <br>
+    4.支持多终端设备的浏览器渲染 <br>
+    5.<code>以上就是扯淡</code>简单理解就是：<code>合理的标签做合理的事情</code></p>
+  </blockquote>
+  
+  <p>遵循方法</p>
+  
+  <blockquote>
+    <ul><li><p>尽量减少使用无意义标签，例如span和div;</p></li>
+    <li><p>尽量不使用标签本身的css属性，例如b</p></li>
+    <li><p>font、s等标签，如果需要这些样 式，那么使用</p></li>
+    <li><p>css样式来进行添加;</p></li>
+    <li><p>在需要强调的部分，使用strong、em，但是样式尽量使用css样式来描述;</p></li>
+    <li><p>表格搭建时，使用表格头部 表格身体 表格尾部`;</p></li>
+    <li><p>列表搭建时，使用无序列表有序列表 定义列表 ;</p></li>
+    </ul>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="11实现页面的三栏布局左右均为定宽高度可以自适应双飞翼布局-圣杯布局">11.实现页面的三栏布局，左右均为定宽，高度可以自适应；（双飞翼布局 、圣杯布局）</h3>
+
+<blockquote>
+  <p><a href="https://www.cnblogs.com/woodk/p/5147085.html" target="_blank">https://www.cnblogs.com/woodk/p/5147085.html</a> <br>
+  这个是渔人码头的博客，还是很好理解的</p>
+</blockquote>
+
+
+
+<h3 id="12请描述css选择器的优先级原则">12.请描述css选择器的优先级原则?</h3>
+
+<blockquote>
+  <p>在属性后面使用 !important 会覆盖页面内任何位置定义的元素样式。</p>
+  
+  <blockquote>
+    <p>作为style属性写在元素内的样式</p>
+    
+    <ul><li><p>id选择器</p></li>
+    <li><p>类选择器</p></li>
+    <li><p>标签选择器</p></li>
+    <li><p>通配符选择器</p></li>
+    <li><p>浏览器自定义或继承</p></li>
+    </ul>
+    
+    <p><code>总结排序：!important &gt; 行内样式&gt;ID选择器 &gt; 类选择器 &gt; 标签 &gt; 通配符 &gt; 继承 &gt; 浏览器默认属性</code></p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="13解释css-sprites雪碧图如何使用">13.解释CSS sprites(雪碧图)如何使用？</h3>
+
+<blockquote>
+  <p>CSS Sprites是CSS图像合成技术，有的称CSS精灵有的称雪碧图，他的作用就是把网页上很多小图标放到一张图片里面，然后通过CSS里面的background-position来控制每个图片的坐标，再利用CSS的“background-image”，“background- repeat”的组合来精确的定位出背景图片的位置。 <br>
+  <code>使用场景</code></p>
+  
+  <ul><li><p>1.静态图片，不随用户信息的变化而变化 </p></li>
+  <li><p>2.小图片，图片容量比较小 </p></li>
+  <li><p>3.加载量比较大</p></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="14css中的animation动画如何使用-transition-animation-什么区别">14.CSS中的animation动画如何使用 / transition animation 什么区别？</h3>
+
+<blockquote>
+  <p>使用方法</p>
+  
+  <blockquote>
+    <p>由”@keyframes”开头，后面是 “动画的名称”加上 “{}”，括号中就是一些不同时间段样式规 <br>
+    则。可以在这个规则中创建多个百分比，我们分别给每一个百分比中给需要有动画效果的元素加上 <br>
+    不同的属性，比如说移动，改变元素颜色，位置，大小，形状等</p>
+    
+    <pre class="prettyprint hljs-dark"><code class="hljs css"><div class="hljs-line"><span class="hljs-selector-tag">div</span>{
+</div><div class="hljs-line"><span class="hljs-attribute">animation</span>: box <span class="hljs-number">1s</span> ease <span class="hljs-number">2s</span> infinite alternate forwards;
+</div><div class="hljs-line">}
+</div><div class="hljs-line">@<span class="hljs-keyword">keyframes</span> box {
+</div><div class="hljs-line">0%{<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(0)}
+</div><div class="hljs-line">100%{<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(1000px)}
+</div><div class="hljs-line">}
+</div><div class="hljs-line"><wbr>
+</div></code></pre>
+  </blockquote>
+  
+  <p>区别</p>
+  
+  <blockquote>
+    <p>a、transition需要一个触发事件(hover,checked,focus)才会随时间改变其CSS属性；animation在不 <br>
+    需要触发任何事件的情况下，也可以显式的随时间变化来改变元素CSS属性。 <br>
+    b、transition是一次性的，除非不停的触发；animation:可以设置循环次数或(infinite)不停的执行动 <br>
+    画 <br>
+    c、transition只能定义开始状态和结束状态，不能定义中间状态，只有两个状态。 <br>
+    animation通过控制keyframes(关键帧)来控制动画的每一步，类似flash的关键帧来声明动画。 <br>
+    （0%,10%,70%,100%），或(from,to) <br>
+    d、一条transition规则，只能定义一个属性的变化，不能涉及多个属性。</p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="15使用css让一个div消失在视野中发挥想象力">15..使用css,让一个div消失在视野中；发挥想象力?</h3>
+
+<p><code>这个就比较重要了，认真试试吧</code></p>
+
+<blockquote>
+  <p>display: none;<code>隐藏不占位</code> <br>
+  visibility: hidden;<code>隐藏占位</code> <br>
+  transform: translate(-9999px); <br>
+  margin-top: -9999px; <br>
+  position: absolute;top:-9999px; <br>
+  opacity: 0; <br>
+  width:0;overflow: hidden; <br>
+  height: 0;overflow: hidden; <br>
+  background-color:transparent;<code>透明</code> <br>
+  transform: scale(0);<code>缩放</code> <br>
+  clip-path: polygon(100% 100%);<code>裁剪</code></p>
+</blockquote>
+
+
+
+<h3 id="16至少写出3种css3新增的属性">16.至少写出3种css3新增的属性?</h3>
+
+<blockquote>
+  <ul><li><p>border-radius:圆角</p></li>
+  <li><p>box-shadow：阴影</p></li>
+  <li><p>border-image：边框图片</p></li>
+  <li><p>text-shadow:文字阴影</p></li>
+  <li><p>transform</p>
+  
+  <ul>
+  <li><p>translate位移</p></li>
+  <li><p>rotate旋转</p></li>
+  <li><p>scale缩放</p></li>
+  <li><p>skew转动时给定的角度</p></li>
+  <li><p>rotateX/rotateY/rotateZ：3D旋转属性</p></li></ul></li>
+  <li><p>box-sizing父级宽高不变，内容随便折腾</p></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="17如何用css绘制一个三角不允许使用图片">17.如何用css绘制一个三角(不允许使用图片)？</h3>
+
+<blockquote>
+  <pre class="prettyprint hljs-dark"><code class="hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span><span class="css"> </span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-selector-class">.trangle</span>{ </span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>; </span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-attribute">border-width</span>: <span class="hljs-number">100px</span> <span class="hljs-number">100px</span> <span class="hljs-number">100px</span> <span class="hljs-number">100px</span>; </span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-attribute">border-style</span>: solid; </span>
+</div><div class="hljs-line"><span class="css"><span class="hljs-attribute">border-color</span>: transparent transparent red transparent; </span>
+</div><div class="hljs-line"><span class="css">} </span>
+</div><div class="hljs-line"><span class="css"></span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"trangle"</span>&gt;</span>
+</div></code></pre>
+  
+  <p><code>绘制左右三角形的时候适当调整height:0 <br>
+  border-height:边框高度</code> <br>
+  border-width 边框线宽度  <br>
+  border-style 边框线的类型 solid 实线 dashed 虚线 dotted 点状线  <br>
+  border-color 颜色 需要什么方向 保留当前方向的颜色 其他方向为透明</p>
+</blockquote>
+
+<h3 id="18你做的页面在哪些流览器测试过这些浏览器的内核分别是什么">18.你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?</h3>
+
+<blockquote>
+  <p>Webkit内核(v8引擎)：谷歌浏览器(chrome) 、 safari、大部分国产浏览器(360、搜狗、QQ、UC、猎豹、百度…)、安卓和IOS大部分手机浏览器…  <br>
+  Gecko内核：火狐浏览器(firefox)  <br>
+  Presto内核：欧朋浏览器(opera)  <br>
+  Trident内核：IE浏览器（IE6 - IE11）</p>
+</blockquote>
+
+
+
+<h3 id="19divcss的布局较table布局有什么优点">19.div+css的布局较table布局有什么优点？</h3>
+
+<blockquote>
+  <p>div+css布局的好处：</p>
+  
+  <blockquote>
+    <p>1.符合W3C标准，代码结构清晰明了，结构、样式和行为分离，带来足够好的可维护性。 <br>
+    2.布局精准，网站版面布局修改简单。 <br>
+    3.加快了页面的加载速度（最重要的）（在IE中要将整个table加载完了才显示内容）。 <br>
+    4.节约站点所占的空间和站点的流量。 <br>
+    5.用只包含结构化内容的HTML代替嵌套的标签，提高另外搜索引擎对网页的搜索效率。</p>
+  </blockquote>
+  
+  <p>table布局的好处（table布局也不是一点用的没有，这点是毋庸置疑的）</p>
+  
+  <blockquote>
+    <p>1.容易上手。 <br>
+    2.可以形成复杂的变化，简单快速。 <br>
+    3.表现上更加“严谨”，在不同浏览器中都能得到很好的兼容。</p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="20img的alt与title有何异同-strong与em的异同">20.img的alt与title有何异同？ strong与em的异同？</h3>
+
+<ul><li><p>alt属性是在你的图片因为某种原因不能加载时在页面显示的提示信息，它会直接输出在原本加载图片的地方 </p></li>
+<li><p>title属性是在你鼠标悬停在该图片上时显示一个小提示，鼠标离开就没有了，有点类似jQuery的hover</p></li>
+<li><p>但从视觉上效果观看b与strong、i与em是没有区别的,唯一区别是搜索引擎检索的时候搜索引擎可以识别strong、em标签、而不能识别b与i标签  <br>
+建议：为了符合CSS3的规范，b应尽量少用而改用strong ,i应尽量少用而改用em</p></li>
+</ul>
+
+
+
+<h3 id="21对bfc规范的理解">21..对BFC规范的理解?</h3>
+
+<p><code>我反正不是很理解</code></p>
+
+<blockquote>
+  <p>BFC 即 Block Formatting Contexts (块级格式化上下文)，它是指一个独立的块级渲染区域，只有块级参与，该区域拥有一套渲染规则来约束块级盒子的布局，具有 BFC 特性的元素可以看作是隔离了的独立容器，容器里面的元素不会在布局上影响到外面的元素，并且 BFC 具有普通容器所没有的一些特性。</p>
+  
+  <blockquote>
+    <p>通俗一点来讲，可以把 BFC 理解为一个封闭的大箱子，箱子内部的元素无论如何翻江倒海，都不会影响到外部。 <br>
+    <code>有点像box-sizing</code></p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="22你能描述一下渐进增强和优雅降级之间的不同吗">22.你能描述一下渐进增强和优雅降级之间的不同吗?</h3>
+
+<blockquote>
+  <ul><li><p>渐进增强（progressive enhancement）</p>
+  
+  <blockquote>
+    <p>针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。就是以最低要求，实现最基础功能为基本，向上兼容。以css为例，以下这种写法就是渐进增强</p>
+    
+    <pre class="prettyprint hljs-dark"><code class="hljs maxima"><div class="hljs-line">.<span class="hljs-built_in">box</span>{ 
+</div><div class="hljs-line">-webkit-<span class="hljs-built_in">border</span>-<span class="hljs-built_in">radius</span>:10px; 
+</div><div class="hljs-line">-moz- <span class="hljs-built_in">border</span>- <span class="hljs-built_in">radius</span>: 10px; 
+</div><div class="hljs-line"><span class="hljs-built_in">border</span>- <span class="hljs-built_in">radius</span>: 10px; 
+</div><div class="hljs-line">}
+</div></code></pre>
+  </blockquote></li>
+  <li><p>优雅降级（graceful degradation）</p>
+  
+  <blockquote>
+    <p>一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。也就是以高要求，高版本为基准，向下兼容。同样以css为例，优雅降级的写法如下</p>
+    
+    <pre class="prettyprint hljs-dark"><code class="hljs maxima"><div class="hljs-line">.<span class="hljs-built_in">box</span>{ 
+</div><div class="hljs-line"><span class="hljs-built_in">border</span>- <span class="hljs-built_in">radius</span>: 10px; 
+</div><div class="hljs-line">-moz- <span class="hljs-built_in">border</span>- <span class="hljs-built_in">radius</span>: 10px; 
+</div><div class="hljs-line">-webkit- <span class="hljs-built_in">border</span>- <span class="hljs-built_in">radius</span>: 10px; 
+</div><div class="hljs-line">}
+</div></code></pre>
+  </blockquote></li>
+  <li><p>区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的、能够起作用的版本开始，并不断扩充，以适应未来环境的需要。 <br>
+  <code>话很难理解，然并卵···就是一个兼容顺序</code></p></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="23为什么利用多个域名来存储网站资源会更有效">23.为什么利用多个域名来存储网站资源会更有效？</h3>
+
+<blockquote>
+  <ul><li><p>1.CDN缓存更方便</p>
+  
+  <ul><li><p>2.突破浏览器并发限制（一般每个域名建立的链接不超过6个）</p></li>
+  <li><p>3.Cookieless，节省带宽，尤其是上行带宽一般 - 比下行要慢</p></li>
+  <li><p>4.对于UGC的内容和主站隔离，防止不必要的安全问题(上传js窃取主站cookie之类的)。正是这个原因要求用户内容的域名必须不是自己主站的子域名，而是一个完全独立的第三方域名。</p></li>
+  <li><p>5.数据做了划分，甚至切到了不同的物理集群，通过子域名来分流比较省事。这个可能被用的不多。  <br>
+  PS:关于Cookie的问题，带宽是次要的，安全隔离才是主要的。关于多域名，也不是越多越好，虽然服务器端可以做泛解释，浏览器做dns解释也是耗时间的，而且太多域名，如果要走https的话，还有要多买证书和部署的问题。</p></li>
+  </ul>
+  
+  </li></ul></blockquote>
+
+<h3 id="24csshack问题我就不总结了给你们个张鑫旭总结的网址看看">24.csshack问题我就不总结了给你们个<code>张鑫旭总结的</code>网址看看：</h3>
+
+<p><code>张鑫旭总结</code> <br>
+<a href="https://www.zhangxinxu.com/wordpress/2013/05/css3-box-shadow-animation-loading-ie10-css-hack/" target="_blank">https://www.zhangxinxu.com/wordpress/2013/05/css3-box-shadow-animation-loading-ie10-css-hack/</a></p>
+
+<h3 id="25前端页面有哪三层构成分别是什么作用是什么">25.前端页面有哪三层构成，分别是什么?作用是什么?</h3>
+
+<p><code>作为了解吧，谁也背不下来</code></p>
+
+<blockquote>
+  <ul><li><p>网页的结构层：</p>
+  
+  <blockquote>
+    <p>（structural layer）由 HTML 或 XHTML 之类的标记语言负责创建。标签，也 <br>
+    就是那些出现在尖括号里的单词，对网页内容的语义含义做出了描述，但这些 <br>
+    标签不包含任何关于如何显示有关内容的信息</p>
+  </blockquote></li>
+  <li><p>对“如何显示有关内容”的问题做出了回答。</p></li>
+  <li><p>网页的行为层（behavior layer）负责回答“内容应该如何对事件做 <br>
+  出反应”这一问题。这是 Javascript 语言和 DOM 主宰的领域。</p>
+  
+  <blockquote>
+    <p>网页的表示层和行为层总是存在的，即使我们未明确地给出任何具体的指令也 <br>
+    是如此。此时， Web 浏览器将把它的默认样式和默认事件处理函数施加在网页 <br>
+    的结构层上。例如，浏览器会在呈现“文本段”元素时留出页边距，有些浏览器会 <br>
+    在用户把鼠标指针悬停在 某个元素的上方时弹出一个显示着该元素的 title 属性 <br>
+    值的提示框，等等。</p>
+  </blockquote></li>
+  </ul>
+</blockquote>
+
+<h3 id="26position跟displaymargin-collapseoverflowfloat这些特性相互叠加后会怎么样">26.、position跟display、margin collapse、overflow、float这些特性相互叠加后会怎么样？</h3>
+
+<p><code>这个题就比较有意思了</code></p>
+
+<blockquote>
+  <p>先看看’display’、’position’ 和 ‘float’ 的相互关系</p>
+  
+  <blockquote>
+    <ul><li><p>‘display’ 的值为 ‘none’ <br>
+    如果 ‘display’ 的值为 ‘none’，那么 ‘position’ 和 ‘float’ 不起作用。在这种情况下，元素不产生框。因此浮动和定位无效</p></li>
+    <li><p>就是说，当元素是绝对定位时，浮动失效，’display’ 会被按规则重置</p></li>
+    <li><p>‘float’ 的值不是 “none”。 <br>
+    按照规则，span 是行内元素，因此不能够设置其宽度和高度。但是浮动后’display’ 成为block</p></li>
+    </ul>
+  </blockquote>
+  
+  <p>position跟display、overflow、float下的margin collapse。</p>
+  
+  <blockquote>
+    <p>margin collapse我觉得这里的意思应该是Collapsing margins，即外边距折叠，指的是毗邻的两个 <br>
+    或多个外边距 (margin) 会合并成一个外边距。 <br>
+    其中所说的 margin 毗邻，可以归结为以下两点： <br>
+    •这两个或多个外边距没有被非空内容、padding、border 或 clear 分隔开。 <br>
+    •这些 margin 都处于普通流中。</p>
+  </blockquote>
+  
+  <p>折叠问题</p>
+  
+  <blockquote>
+    <p>1.两个或多个毗邻的普通流中的块元素垂直方向上的 margin 会折叠。 <br>
+    折叠后 margin 的计算 <br>
+    1). 参与折叠的 margin 都是正值 <br>
+    取其中 margin 较大的值为最终 margin 值 <br>
+    2). 参与折叠的 margin 都是负值 <br>
+    当 margin 都是负值的时候，取的是其中绝对值较大的，然后，从 0 位置，负向位移 <br>
+    3).参与折叠的 margin 中有正值，有负值 <br>
+    毗邻的 margin 中有正值，同时存在负值会怎样呢？有正有负，先取出负 margin 中绝对值中 <br>
+    最大的，然后，和正 margin 值中最大的 margin 相加。 <br>
+    4). 相邻的 margin 要一起参与计算，不得分步计算 <br>
+    要注意，相邻的元素不一定非要是兄弟节点，父子节点也可以，即使不是兄弟父子节点也可 <br>
+    以相邻。 <br>
+    而且，在计算时，相邻的 margin 要一起参与计算，不得分步计算。 <br>
+    2.浮动元素、inline-block 元素、绝对定位元素的 margin 不会和垂直方向上其他元素的 margin 折 <br>
+    叠. <br>
+    3.创建了块级格式化上下文的元素，不和它的子元素发生 margin 折叠 <br>
+    4.元素自身的 margin-bottom 和 margin-top 相邻时也会折叠</p>
+  </blockquote>
+</blockquote>
+
+
+
+<h3 id="27px和em的区别">27.px和em的区别？</h3>
+
+<blockquote>
+  <ul><li><p>px</p>
+  
+  <blockquote>
+    <p>1.表示“绝对尺寸”（并非真正的绝对），实际上就是css中定义的像素，利用px设置字体大小及元素宽高等比较稳定和精确。  <br>
+    2.它是绝对单位，不会因为其他元素的尺寸变化而变化。  <br>
+    3.px的缺点是其不能适应浏览器缩放时产生的变化，因此一般不用于响应式网站。</p>
+  </blockquote></li>
+  <li><p>em</p>
+  
+  <blockquote>
+    <p>1.表示相对尺寸，值并不是固定的，其相对于当前对象内文本的font-size（如果当前对象内文本的font-size计量单位也是em，则当前对象内文本的font-size的参考对象为父元素文本font-size）。  <br>
+    2.使用em可以较好的相应设备屏幕尺寸的变化，但是在进行元素设置时都需要知道父元素文本的font-size及当前对象内文本的font-size，如有遗漏可能会导致错误。  <br>
+    3.当使用em单位时，像素值将是em值乘以使用em单位的元素的字体大小。</p>
+  </blockquote></li>
+  <li><p>rem</p>
+  
+  <blockquote>
+    <p>1.也表示相对尺寸，其参考对象为根元素的font-size，因此只需要确定这一个font-size。  <br>
+    2.当使用 rem 单位，他们转化为像素大小取决于页根元素的字体大小，即 html 元素的字体大小。 根元素字体大小乘以你 rem 值。</p>
+  </blockquote></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="28css中link和import的区别是">28.CSS中link和@import的区别是？</h3>
+
+<blockquote>
+  <ul><li><p>link和@import虽然都是引入外部的css文件，但是他们是有天差地别的区别的;</p></li>
+  <li><p>link是html标签，@import完全是css提供的方- 式，要写在css文件或者style标签中; <br>
+  他们的加载顺序也是有区别的，当一个页面被加载的时候，link引用的css文件会被同时加载，而@import引入的css文件会等页面全部下载完后再加载;</p></li>
+  <li><p>当使用javascript控制DOM去改变css样式的时候，只能使用link标签，因为@import是不能被DOM控制的;</p></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="29为什么要初始化样式">29.为什么要初始化样式？</h3>
+
+<p><code>一般引用reset样式表，了解一下</code></p>
+
+<blockquote>
+  <p>CSS初始化是指重设浏览器的样式。由于浏览器的兼容的问题，不同的浏览器默认的样式可能不尽相同，所以开发时的第一件事可能就是如何把它们统一。如果没对CSS初始化往往会出现浏览器之间的页面差异。每次新开发网站或新网页时候通过初始化CSS样式的属性，为我们将用到的CSS或html标签更加方便准确，使得我们开发网页内容时更加方便简洁，同时减少CSS代码量，节约网页下载时间。  <br>
+  弊端：初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。</p>
+</blockquote>
+
+<h3 id="30sassless是什么大家为什么要使用他们">30.Sass、LESS是什么？大家为什么要使用他们？</h3>
+
+<blockquote>
+  <ul><li><p>SASS是一种CSS开发工具，是一种动态样式语言，Sass语法属于缩排语法，比css比多出好些功能(如变量、嵌套、运算,混入(Mixin)、继承、颜色处理，函数等)，更容易阅读。提供了许多便利的写法，大大节省了设计者的时间，使得CSS的开发变得简单和可维护，后缀名.scss</p></li>
+  <li><p>Less是一门CSS预处理语言，也是一种动态样式语言. 对CSS赋予了动态语言的特性，如变量，继承，运算， 函数. Less 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可在服务端运行 (借助 Node.js)。它扩展了CSS语言，增加了变量，Mixin，函数等特性，使CSS更易维护和扩展。Less可以运行在Node或者浏览器端。后缀名.less</p></li>
+  </ul>
+  
+  <p>为什么使用它们？ </p>
+  
+  <blockquote>
+    <p>1.结构清晰，便于扩展。  <br>
+    2.可以方便地屏蔽浏览器私有语法差异。这个不用多说，封装对浏览器语法差异的重复处理，减少无意义的机械劳动。  <br>
+    3.可以轻松实现多重继承。  <br>
+    4.完全兼容 CSS 代码，可以方便地应用到老项目中。LESS 只是在 CSS 语法上做了扩展，所以老的 CSS 代码也可以与 LESS 代码一同编译。</p>
+  </blockquote>
+</blockquote></div></body></html>
